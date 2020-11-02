@@ -1,0 +1,76 @@
+@import "partials/mixins";
+@import "partials/params";
+
+.sms_confirm {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  .sms_turnOn {
+    display: flex;
+    align-items: center;
+    .sms_turnOn-title {
+      margin-right: 3.125rem;
+      color: #516375;
+      text-transform: uppercase;
+      font-size: 2rem;
+    }
+    .toggle_btn {
+      width: 6.25rem;
+      height: 3.4375rem;
+      padding: 3px;
+      background-color: #c3d2e1;
+      border-radius: 34px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .toggle_btn_green {
+        width: 2.5625rem;
+        height: 2.5625rem;
+        border-radius: 50%;
+        background-color: #3eb553;
+        cursor: pointer;
+      }
+    }
+  }
+  .sms_turnOff {
+    display: none;
+    width: 80%;
+    margin: 0 auto 1rem;
+    justify-content: space-between;
+    .sms_turnOff-left {
+      width: 55%;
+      border-bottom: 0.125rem solid #282f54;
+      p {
+        margin: 1rem;
+        font-size: 1.625rem;
+        color: #868895;
+        text-transform: uppercase;
+      }
+      .sms_turnOff-input {
+        width: 100%;
+        padding-bottom: 1.718rem;
+        padding-top: 0.8125rem;
+        font-size: 2.25rem;
+        color: #3e3e3e;
+      }
+    }
+    .sms_turnOff-right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .confirm_button {
+        display: flex;
+        width: 17.125rem;
+        height: 6.4375rem;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        color: #ffffff;
+        background-color: #3e42b5;
+        border-radius: 0.6525rem;
+      }
+    }
+  }
+}

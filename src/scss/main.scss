@@ -1,0 +1,205 @@
+@import "partials/mixins";
+@import "partials/params";
+@import "partials/reset";
+
+@font-face {
+  font-family: "lbet-mt";
+  src: url("./fonts/lbet-mt-light.woff2") format("woff2"),
+    url("./fonts/lbet-mt-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "lbet-mt";
+  src: url("./fonts/lbet-mt-regular.woff2") format("woff2"),
+    url("../fonts/lbet-mt-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "lbet-mt";
+  src: url("./fonts/lbet-mt-bold.woff2") format("woff2"),
+    url("../fonts/lbet-mt-bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "lbet-mt";
+  src: url("./fonts/lbet-mt-black.woff2") format("woff2"),
+    url("../fonts/lbet-mt-black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+//end new
+
+@font-face {
+  font-family: "BPGArial2010";
+  src: url("./fonts/BPGArial2010.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/BPGArial2010.woff") format("woff"),
+    url("../fonts/BPGArial2010.ttf") format("truetype"),
+    url("../fonts/BPGArial2010.svg#BPGArial2010") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+10D0-10F0;
+}
+
+@font-face {
+  font-family: "BPGArialCaps2010";
+  src: url("./fonts/BPGArialCaps2010.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/BPGArialCaps2010.woff") format("woff"),
+    url("../fonts/BPGArialCaps2010.ttf") format("truetype"),
+    url("../fonts/BPGArialCaps2010.svg#BPGArialCaps2010") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+10D0-10F0;
+}
+
+@font-face {
+  font-family: "Datebashvili";
+  src: url("./fonts/hinted-Datebashvili.eot");
+  src: url("../fonts/hinted-Datebashvili.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/hinted-Datebashvili.woff2") format("woff2"),
+    url("../fonts/hinted-Datebashvili.woff") format("woff"),
+    url("../fonts/hinted-Datebashvili.ttf") format("truetype"),
+    url("../fonts/hinted-Datebashvili.svg#Datebashvili") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gpbMtavruliBold";
+  src: url("./fonts/gpbMtavruliBold.woff2") format("woff2"),
+    url("../fonts/gpbMtavruliBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "! BPG GEL";
+  src: url("./fonts/hinted-BPGGEL.eot");
+  src: local("! BPG GEL"), local("!BPGGEL"),
+    url("../fonts/hinted-BPGGEL.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/hinted-BPGGEL.woff") format("woff"),
+    url("../fonts/hinted-BPGGEL.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lbet-nus";
+  src: url("./fonts/LBetSTDNus-Medium.woff2") format("woff2"),
+    url("../fonts/LBetSTDNus-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lbet-nus";
+  src: url("./fonts/LBetSTDNus-Bold.woff2") format("woff2"),
+    url("../fonts/LBetSTDNus-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lbet-mt";
+  src: url("./fonts/LBetSTDMT-Regular.woff2") format("woff2"),
+    url("../fonts/LBetSTDMT-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "lbet-mt";
+  src: url("./fonts/LBetSTDMT-Bold.woff2") format("woff2"),
+    url("../fonts/LBetSTDMT-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+html,
+body {
+  @include clear;
+  width: 100%;
+  color: $font-color;
+  // font-family: "Datebashvili";
+  background-color: black;
+  font-size: 16px;
+  @media (max-width: 850px) {
+    font-size: 15px;
+  }
+  @media (max-width: 794px) {
+    font-size: 13px;
+  }
+  @media (max-width: 696px) {
+    font-size: 12px;
+  }
+  @media (max-width: 632px) {
+    font-size: 11px;
+  }
+  @media (max-width: 580px) {
+    font-size: 10px;
+  }
+  @media (max-width: 532px) {
+    font-size: 9px;
+  }
+  @media (max-width: 475px) {
+    font-size: 8px;
+  }
+  @media (max-width: 430px) {
+    font-size: 7px;
+  }
+  @media (max-width: 375px) {
+    font-size: 6px;
+  }
+  @media (max-width: 363px) {
+    font-size: 6px;
+  }
+}
+
+.pop_up_mobile {
+  position: relative;
+  min-width: 320px;
+  max-width: 934px;
+  margin: 0 auto;
+  z-index: 11;
+}
+
+.mobile_content {
+  position: relative;
+  // display: flex;
+  min-height: 100vh;
+  padding: 5.5rem 0;
+  background-color: #ffff;
+  z-index: 7;
+}
+.shadow {
+  box-shadow: 0 5px 20px #6182ac;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.card_pay {
+  &.tb {
+    background-color: #00abed;
+  }
+  &.bg {
+    background-color: #f26724;
+  }
+  &.ld {
+    background-color: #525d65;
+  }
+}
+
+input {
+  background: none;
+  border: none;
+  outline: none;
+}
+.map_content {
+  width: 100%;
+  height: 100vh;
+}

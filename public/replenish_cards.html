@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0 minimal-ui">
+    <title>Scss</title>
+    <link rel="stylesheet" href="bundle.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <div class="pop_up_mobile">
+        <div class="header">
+            <div class="mobile_header">
+                <div class="mobile_header_top">
+                    <div class="go_back_btn">
+                        <img src="./img/Component 30 – 1.svg" alt="">
+                    </div>
+                    <div class="close_btn">
+                        <img src="./img/Group 1067.svg" alt="">
+                    </div>
+                </div>
+                <div class="mobile_header_bottom">
+                    <div class="replenish_btn active-green shadow">
+                        <div class="mobile_header_img">
+                            <!-- <img src="./img/Component 31 – 1.png" alt=""> -->
+                            <img src="./img/Group 852.svg" alt="">
+
+                        </div>
+                        შევსება
+                    </div>
+                    <div class="pay_btn">
+                        <div class="mobile_header_img">
+                            <img src="./img/Group 852.svg" alt="">
+
+                        </div>
+                        გატანა
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="mobile_content">
+            <div class="sms_confirm">
+                <div class="sms_turnOn ">
+                    <div class="sms_turnOn-title">
+                        <p>sms დადასტურება </p>
+                    </div>
+                    <div class="toggle_btn">
+                        <div class="toggle_btn_green"></div>
+                    </div>
+
+                </div>
+                <div class="sms_turnOff">
+                    <div class="sms_turnOff-left">
+                        <p >შეიყვანეთ sms კოდი</p>
+                        <input type="text" class="sms_turnOff-input">
+                    </div>
+                    <div class="sms_turnOff-right">
+                        <div class="confirm_button">დასტური</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards_section">
+                <div class="card">
+                    <div class="card_pay tb">
+                        <div class="card_top_path">
+                            <div class="card_logo">
+                                <div class="card_logo_img">
+                                    <img src="./img/svg-img/Layer_1.svg" alt="">
+                                </div>
+
+
+                                <img class="close" src="./img/Component 34 – 11.png" alt="">
+                            </div>
+                            <div class="card_validity">02/23</div>
+                        </div>
+                        <div class="card_bottom_path">
+                            <div>****</div>
+                            <div>****</div>
+                            <div>****</div>
+                            <div class="card_last_digit">4596</div>
+                        </div>
+                    </div>
+                    <div class="delete_card_form">
+                        <div class="card_form">
+                            <div class="card_form_confirm" title="sms კოდი არასწორია">
+                                <label>
+                                    შეიყვანეთ sms კოდი
+                                </label>
+                                <input type="text" name="name" class="delete_input" />
+                            </div>
+
+                            <input type="submit" value="დასტური" class="cards_confirm_button" />
+                        </div>
+                    </div>
+                    <div class="card_delete_successful">
+                        <div class="card_delete_successful_img">
+                            <img src="./img/svg-img/Group 1096.svg" alt="">
+                        </div>
+                        <p>ბარათი წარმატებით <br>წაიშალა</p>
+                    </div>
+                    <div class="card_delete_unsuccessful">
+                        <div class="card_delete_unsuccessful_img">
+                            <img src="./img/svg-img//Group 1102.svg" alt="">
+                        </div>
+                        <p>ბარათის წაშლა<br>ვერ მოხერხდა</p>
+                    </div>
+                </div>
+
+
+
+                <div class="card">
+                    <div class="card_pay bg">
+                        <div class="card_top_path">
+                            <div class="card_logo">
+                                <div class="card_logo_img">
+                                    <img src="./img/Layer_1.png" alt="">
+                                </div>
+
+
+                                <img class="close" src="./img/Component 34 – 11.png" alt="">
+                            </div>
+                            <div class="card_validity">02/23</div>
+                        </div>
+                        <div class="card_bottom_path">
+                            <div>****</div>
+                            <div>****</div>
+                            <div>****</div>
+                            <div class="card_last_digit">4596</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_pay bg">
+                        <div class="card_top_path">
+                            <div class="card_logo">
+                                <div class="card_logo_img">
+                                    <img src="./img/svg-img/Layer_1.svg" alt="">
+                                </div>
+
+
+                                <img class="close" src="./img/Component 34 – 11.png" alt="">
+                            </div>
+                            <div class="card_validity">02/23</div>
+                        </div>
+                        <div class="card_bottom_path">
+                            <div>****</div>
+                            <div>****</div>
+                            <div>****</div>
+                            <div class="card_last_digit">4596</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banking_providers_section">
+                <div class="banking_provider_item">
+                    <div class="collapsible_head ">
+                        <div class="banking_provider_img bg-width">
+                            <img src="./img/svg-img/Component 48 – 4.svg" alt="">
+                        </div>
+                        <div class="banking_provider_info">
+                            <img src="./img/svg-img/Group 1059.svg" alt="">
+                        </div>
+                        <div class="banking_provider_icon">
+                            <img src="./img/svg-img/Group 1052.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="collapsible_body">
+                        <div class="collapsible_body_top_block">
+                            <p class="collapsible_body-label"> აირჩიეთ ბარათი</p>
+                            <div class="dropdown_menu">
+                                <div class="dropdown_menu_head">
+                                    <div class="dropdown_menu_head-left">
+                                        <div class="dropdown__link-circle">
+                                            <img src="./img/svg-img/Component 30 – 2.svg" alt="">
+                                        </div>
+                                        <p>ახალი ბარათი შენახვით</p>
+                                    </div>
+
+                                    <div class="dropdowmn_list-icon">
+                                        <img src="./img/svg-img/Component 31 – 2.svg" alt="">
+                                    </div>
+                                </div>
+                                <ul class="dropdown_menu_list">
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">
+                                            <div class="dropdown__link-circle">
+                                                <img src="./img/svg-img/Component 32 – 2.svg" alt="">
+                                            </div>
+                                            <p>ახალი ბარათი შენახვით</p>
+
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">
+                                            <div class="dropdown__link-logo">
+                                                <img src="./img/svg-img/Component 33 – 6.svg" alt="">
+                                            </div>
+                                           <div>****</div>
+                                            <div>****</div>
+                                            <div>****</div>
+                                            <div>6454</div>
+                                    
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">
+                                            <div class="dropdown__link-logo">
+                                                <img src="./img/svg-img/Component 34 – 1.svg" alt="">
+                                            </div>
+                                            <div>****</div>
+                                            <div>****</div>
+                                            <div>****</div>
+                                            <div>6454</div>
+                                    
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="collapsible_body_middle_block" title="თანხა არასწორად არის მითითებული">
+                            <p class="collapsible_body-label">შეიყვანეთ თანხა</p>
+                            <input type="text" class="collapsible_body-input">
+                        </div>
+                        <div class="collapsible_body_bottom_block">
+                            <div class="collapsible_body_bottom_block-left">
+                                <p class="collapsible_body-label">შეიყვანეთ sms კოდი</p>
+                                <input type="text" class="collapsible_body-input">
+                            </div>
+                            <div class="collapsible_body_bottom_block-right">
+                                <div class="confirm_button">დასტური</div>
+                            </div>
+                        </div>
+                        <div class="collapsible_body_replenish_button">შევსება</div>
+
+                    </div>
+
+                </div>
+                <div class="banking_provider_item">
+                    <div class="collapsible_head ">
+                        <div class="banking_provider_img">
+                        <img src="./img/tbc-1.png" alt="">
+                        </div>
+                        <div class="banking_provider_info">
+                            <img src="./img/svg-img/Group 1059.svg" alt="">
+                        </div>
+                        <div class="banking_provider_icon">
+                            <img src="./img/svg-img/Group 1052.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="collapsible_body">
+                        <div class="collapsible_body_top_block">
+                            <p class="collapsible_body-label"> აირჩიეთ ბარათი</p>
+                            <div class="dropdown_menu">
+                                <div class="dropdown_menu_head">
+                                    <div class="dropdown_menu_head-left">
+                                        <div class="dropdown__link-circle">
+                                            <img src="./img/svg-img/Component 30 – 2.svg" alt="">
+                                        </div>
+                                        <p>ახალი ბარათი შენახვით</p>
+                                    </div>
+                    
+                                    <div class="dropdowmn_list-icon">
+                                        <img src="./img/svg-img/Component 31 – 2.svg" alt="">
+                                    </div>
+                                </div>
+                                <ul class="dropdown_menu_list">
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">
+                                            <div class="dropdown__link-circle">
+                                                <img src="./img/svg-img/Component 32 – 2.svg" alt="">
+                                            </div>
+                                            <p>ახალი ბარათი შენახვით</p>
+                    
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">
+                                            <div class="dropdown__link-logo">
+                                                <img src="./img/svg-img/Component 33 – 6.svg" alt="">
+                                            </div>
+                                            <div>****</div>
+                                            <div>****</div>
+                                            <div>****</div>
+                                            <div>6454</div>
+                    
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">
+                                            <div class="dropdown__link-logo">
+                                                <img src="./img/svg-img/Component 34 – 1.svg" alt="">
+                                            </div>
+                                            <div>****</div>
+                                            <div>****</div>
+                                            <div>****</div>
+                                            <div>6454</div>
+                    
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="collapsible_body_middle_block" title="თანხა არასწორად არის მითითებული">
+                            <p class="collapsible_body-label">შეიყვანეთ თანხა</p>
+                            <input type="text" class="collapsible_body-input">
+                        </div>
+                        <div class="collapsible_body_bottom_block">
+                            <div class="collapsible_body_bottom_block-left">
+                                <p class="collapsible_body-label">შეიყვანეთ sms კოდი</p>
+                                <input type="text" class="collapsible_body-input">
+                            </div>
+                            <div class="collapsible_body_bottom_block-right">
+                                <div class="confirm_button">დასტური</div>
+                            </div>
+                        </div>
+                        <div class="collapsible_body_replenish_button">შევსება</div>
+                    
+                    </div>
+                
+                </div>
+                <div class="banking_provider_item">
+                    <div class="collapsible_head ">
+                        <div class="banking_provider_img">
+                            <img src="./img/svg-img/logo-fb-ka.svg" alt="">
+                        </div>
+                        <div class="banking_provider_info">
+                            <img src="./img/svg-img/Group 1059.svg" alt="">
+                        </div>
+                        <div class="banking_provider_icon">
+                            <img src="./img/svg-img/Group 1052.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="collapsible_body">
+                        <div class="collapsible_body_top_block">
+                            <p class="collapsible_body-label"> აირჩიეთ ბარათი</p>
+                            <div class="dropdown_menu">
+                                <div class="dropdown_menu_head">
+                                    <div class="dropdown_menu_head-left">
+                                        <div class="dropdown__link-circle">
+                                            <img src="./img/svg-img/Component 30 – 2.svg" alt="">
+                                        </div>
+                                        <p>ახალი ბარათი შენახვით</p>
+                                    </div>
+                    
+                                    <div class="dropdowmn_list-icon">
+                                        <img src="./img/svg-img/Component 31 – 2.svg" alt="">
+                                    </div>
+                                </div>
+                                <ul class="dropdown_menu_list">
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">
+                                            <div class="dropdown__link-circle">
+                                                <img src="./img/svg-img/Component 32 – 2.svg" alt="">
+                                            </div>
+                                            <p>ახალი ბარათი შენახვით</p>
+                    
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">
+                                            <div class="dropdown__link-logo">
+                                                <img src="./img/svg-img/Component 33 – 6.svg" alt="">
+                                            </div>
+                                            <div>****</div>
+                                            <div>****</div>
+                                            <div>****</div>
+                                            <div>6454</div>
+                    
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="" class="dropdown__link">
+                                            <div class="dropdown__link-logo">
+                                                <img src="./img/svg-img/Component 34 – 1.svg" alt="">
+                                            </div>
+                                            <div>****</div>
+                                            <div>****</div>
+                                            <div>****</div>
+                                            <div>6454</div>
+                    
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="collapsible_body_middle_block" title="თანხა არასწორად არის მითითებული">
+                            <p class="collapsible_body-label">შეიყვანეთ თანხა</p>
+                            <input type="text" class="collapsible_body-input">
+                        </div>
+                        <div class="collapsible_body_bottom_block">
+                            <div class="collapsible_body_bottom_block-left">
+                                <p class="collapsible_body-label">შეიყვანეთ sms კოდი</p>
+                                <input type="text" class="collapsible_body-input">
+                            </div>
+                            <div class="collapsible_body_bottom_block-right">
+                                <div class="confirm_button">დასტური</div>
+                            </div>
+                        </div>
+                        <div class="collapsible_body_replenish_button">შევსება</div>
+                    
+                    </div>
+                
+                </div>
+
+                <div class="banking_provider_item">
+                    <div class="collapsible_head ">
+                        <div class="banking_provider_img">
+                            <img src="./img/svg-img/Component 31 – 1.svg" alt="">
+                        </div>
+                        <div class="banking_provider_info">
+                            <img src="./img/svg-img/Group 1059.svg" alt="">
+                        </div>
+                        <div class="banking_provider_icon">
+                            <img src="./img/svg-img/Group 1052.svg" alt="">
+                        </div>
+                    </div>
+                <div class="collapsible_body">
+                    <div class="collapsible_body_top_block">
+                        <p class="collapsible_body-label"> აირჩიეთ ბარათი</p>
+                        <div class="dropdown_menu">
+                            <div class="dropdown_menu_head">
+                                <div class="dropdown_menu_head-left">
+                                    <div class="dropdown__link-circle">
+                                        <img src="./img/svg-img/Component 30 – 2.svg" alt="">
+                                    </div>
+                                    <p>ახალი ბარათი შენახვით</p>
+                                </div>
+                
+                                <div class="dropdowmn_list-icon">
+                                    <img src="./img/svg-img/Component 31 – 2.svg" alt="">
+                                </div>
+                            </div>
+                            <ul class="dropdown_menu_list">
+                                <li class="dropdown__item">
+                                    <a href="" class="dropdown__link">
+                                        <div class="dropdown__link-circle">
+                                            <img src="./img/svg-img/Component 32 – 2.svg" alt="">
+                                        </div>
+                                        <p>ახალი ბარათი შენახვით</p>
+                
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="" class="dropdown__link">
+                                        <div class="dropdown__link-logo">
+                                            <img src="./img/svg-img/Component 33 – 6.svg" alt="">
+                                        </div>
+                                        <div>****</div>
+                                        <div>****</div>
+                                        <div>****</div>
+                                        <div>6454</div>
+                
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="" class="dropdown__link">
+                                        <div class="dropdown__link-logo">
+                                            <img src="./img/svg-img/Component 34 – 1.svg" alt="">
+                                        </div>
+                                        <div>****</div>
+                                        <div>****</div>
+                                        <div>****</div>
+                                        <div>6454</div>
+                
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="collapsible_body_middle_block" title="თანხა არასწორად არის მითითებული">
+                        <p class="collapsible_body-label">შეიყვანეთ თანხა</p>
+                        <input type="text" class="collapsible_body-input">
+                    </div>
+                    <div class="collapsible_body_bottom_block">
+                        <div class="collapsible_body_bottom_block-left">
+                            <p class="collapsible_body-label">შეიყვანეთ sms კოდი</p>
+                            <input type="text" class="collapsible_body-input">
+                        </div>
+                        <div class="collapsible_body_bottom_block-right">
+                            <div class="confirm_button">დასტური</div>
+                        </div>
+                    </div>
+                    <div class="collapsible_body_replenish_button">შევსება</div>
+                
+                </div>
+                
+                </div>
+                <div class="banking_provider_item">
+                    <div class="collapsible_head ">
+                        <div class="banking_provider_img">
+                            <div><img src="./img/svg-img/424.svg" alt=""></div>
+                        
+                            <p>ნებისმიერი ბარათით</p>
+                        </div>
+                        <div class="banking_provider_info">
+                            <img src="./img/svg-img/Group 1059.svg" alt="">
+                        </div>
+                        <div class="banking_provider_icon">
+                            <img src="./img/svg-img/Group 1052.svg" alt="">
+                        </div>
+                    </div>
+                <div class="collapsible_body">
+                    <div class="collapsible_body_top_block">
+                        <p class="collapsible_body-label"> აირჩიეთ ბარათი</p>
+                        <div class="dropdown_menu">
+                            <div class="dropdown_menu_head">
+                                <div class="dropdown_menu_head-left">
+                                    <div class="dropdown__link-circle">
+                                        <img src="./img/svg-img/Component 30 – 2.svg" alt="">
+                                    </div>
+                                    <p>ახალი ბარათი შენახვით</p>
+                                </div>
+                
+                                <div class="dropdowmn_list-icon">
+                                    <img src="./img/svg-img/Component 31 – 2.svg" alt="">
+                                </div>
+                            </div>
+                            <ul class="dropdown_menu_list">
+                                <li class="dropdown__item">
+                                    <a href="" class="dropdown__link">
+                                        <div class="dropdown__link-circle">
+                                            <img src="./img/svg-img/Component 32 – 2.svg" alt="">
+                                        </div>
+                                        <p>ახალი ბარათი შენახვით</p>
+                
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="" class="dropdown__link">
+                                        <div class="dropdown__link-logo">
+                                            <img src="./img/svg-img/Component 33 – 6.svg" alt="">
+                                        </div>
+                                        <div>****</div>
+                                        <div>****</div>
+                                        <div>****</div>
+                                        <div>6454</div>
+                
+                                    </a>
+                                </li>
+                                <li class="dropdown__item">
+                                    <a href="" class="dropdown__link">
+                                        <div class="dropdown__link-logo">
+                                            <img src="./img/svg-img/Component 34 – 1.svg" alt="">
+                                        </div>
+                                        <div>****</div>
+                                        <div>****</div>
+                                        <div>****</div>
+                                        <div>6454</div>
+                
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="collapsible_body_middle_block" title="თანხა არასწორად არის მითითებული">
+                        <p class="collapsible_body-label">შეიყვანეთ თანხა</p>
+                        <input type="text" class="collapsible_body-input">
+                    </div>
+                    <div class="collapsible_body_bottom_block">
+                        <div class="collapsible_body_bottom_block-left">
+                            <p class="collapsible_body-label">შეიყვანეთ sms კოდი</p>
+                            <input type="text" class="collapsible_body-input">
+                        </div>
+                        <div class="collapsible_body_bottom_block-right">
+                            <div class="confirm_button">დასტური</div>
+                        </div>
+                    </div>
+                    <div class="collapsible_body_replenish_button">შევსება</div>
+                
+                </div>                
+                </div>   
+            </div>
+        </div>
+    </div>
+    <script src="./js/card-delete.js"></script>
+
+</body>
+
+</html>

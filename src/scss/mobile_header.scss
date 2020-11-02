@@ -1,0 +1,62 @@
+@import "partials/mixins";
+@import "partials/params";
+.header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+.mobile_header {
+  display: flex;
+  flex-direction: column;
+  padding: 0.625rem 0.625rem 2.5rem 0.625rem;
+  background-color: #f6f6f6;
+  border-radius: 2.5rem 2.5rem 0 0;
+
+  .mobile_header_top {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.31rem 2.37rem 2.5rem 2.37rem;
+
+    .close_btn,
+    .go_back_btn {
+      width: 2.625rem;
+      cursor: pointer;
+    }
+  }
+  .mobile_header_bottom {
+    display: flex;
+    justify-content: space-around;
+    & > div {
+      display: flex;
+      flex-basis: 44%;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4.375rem;
+      color: white;
+      padding: 2.8rem 0;
+      font-size: 2rem;
+      cursor: pointer;
+      background-color: #c3c9ce;
+      &.active-green {
+        background-color: #43a047;
+      }
+      &.active-blue {
+        background-color: #435fa0;
+      }
+    }
+    .mobile_header_img {
+      width: 10%;
+      margin-right: 2vw;
+    }
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3.0625rem;
+    width: 100%;
+    height: 3.0625rem;
+    background: url("./img/Path\ 1175.png");
+  }
+}

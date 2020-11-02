@@ -1,0 +1,9 @@
+<svg id="Component_33_6-car" data-name="Component 33 – 6-car" xmlns="http://www.w3.org/2000/svg" width="107" height="108" viewBox="0 0 107 108">
+  <ellipse id="Ellipse_2" data-name="Ellipse 2" cx="53.5" cy="54" rx="53.5" ry="54" fill="#31b72d"/>
+  <g id="Group_1054" data-name="Group 1054" transform="translate(25.18 31.107)">
+    <path id="Path_522" data-name="Path 522" d="M-1155.871,728.606h10.065l22.021-9.025-1.067-2.6a2.732,2.732,0,0,0-3.564-1.492l-33.728,13.823a2.732,2.732,0,0,0-1.492,3.564l1.067,2.6,3.2-1.311v-2.059A3.5,3.5,0,0,1-1155.871,728.606Z" transform="translate(1163.841 -715.28)" fill="#fff"/>
+    <path id="Path_523" data-name="Path 523" d="M-1121.843,1049.662v-4.556l-1.6.656Z" transform="translate(1126.313 -1021.663)" fill="#fff"/>
+    <path id="Path_524" data-name="Path 524" d="M-739.025,835.82l-2.1-5.122-12.5,5.122Z" transform="translate(782.779 -822.494)" fill="#fff"/>
+    <path id="Path_525" data-name="Path 525" d="M-1050.975,913.563h-36.45a2.732,2.732,0,0,0-2.733,2.732v22.172a2.733,2.733,0,0,0,2.733,2.732h36.45a2.732,2.732,0,0,0,2.732-2.732V916.3A2.731,2.731,0,0,0-1050.975,913.563Zm-27.411,10.574a1.151,1.151,0,0,1-1.151,1.151h-6.333a1.151,1.151,0,0,1-1.151-1.151v-4.261a1.151,1.151,0,0,1,1.151-1.151h6.333a1.151,1.151,0,0,1,1.151,1.151Z" transform="translate(1097.382 -895.497)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,366 @@
+.banking_providers_section {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2.5rem;
+
+  .banking_provider_item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 2.375rem;
+    // min-height: 12.5rem;
+    border: 1px solid #9aa1b2;
+    border-radius: 1.25rem;
+    cursor: pointer;
+    transition: all 1s ease;
+    z-index: 5;
+    .collapsible_head {
+      position: relative;
+      height: 12rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 3.7rem 3.2rem;
+      transition: all 0.1s ease;
+
+      .banking_provider_img {
+        display: flex;
+        align-items: center;
+        width: 58%;
+        margin-right: 6rem;
+        p {
+          margin-left: 3.4375rem;
+          color: #6e6f71;
+          font-size: 1.5rem;
+          font-weight: bold;
+          font-family: "lbet-nus";
+        }
+        @media (max-width: 443px) {
+          width: 47%;
+        }
+        &.bg-width {
+          img {
+            @media (max-width: 493px) {
+              max-width: 127%;
+            }
+            @media (max-width: 406px) {
+              max-width: 137%;
+            }
+          }
+        }
+        &.info-img {
+          max-width: 34%;
+        }
+      }
+      .banking_provider_info {
+        width: 6%;
+      }
+      .banking_provider_icon {
+        display: flex;
+        width: 2.8%;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      .banking_provider_pin {
+        position: relative;
+        top: -0.9rem;
+        display: flex;
+        flex-direction: column;
+        line-height: 1.1;
+        .pin {
+          font-size: 1.375rem;
+          color: #868895;
+          text-transform: uppercase;
+        }
+        .pin_code {
+          font-size: 2.625rem;
+          color: #41476a;
+        }
+      }
+    }
+
+    &.active {
+      .collapsible_body {
+        height: auto;
+      }
+      .banking_provider_icon {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+
+.banking_provider_atms {
+  display: flex;
+  align-items: center;
+  .banking_provider_atms-icon {
+    margin-right: 1.25rem;
+    width: 3rem;
+  }
+  .atms_link {
+    font-size: 2rem;
+    color: #4053a1;
+    text-decoration: underline;
+  }
+}
+.collapsible_body {
+  height: 0;
+  color: #616885;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+  padding: 0 3.2rem;
+  z-index: 6;
+
+  > div {
+    width: 100%;
+    margin-bottom: 3.875rem;
+
+    .collapsible_body-input {
+      width: 100%;
+      padding-bottom: 1.718rem;
+      padding-top: 0.8125rem;
+      font-size: 2.25rem;
+      color: #3e3e3e;
+    }
+  }
+  .collapsible_body-label {
+    // margin: 1rem 1rem 1rem 4.2rem;
+    margin: 1rem;
+    font-size: 1.625rem;
+    color: #868895;
+    text-transform: uppercase;
+  }
+  .collapsible_body_top_block {
+    border-bottom: 0.125rem solid #282f54;
+    .dropdown_menu {
+      position: relative;
+      width: 100%;
+      padding: 1.6875rem 0;
+      margin: 0 auto;
+      transition: all 0.1s ease;
+      .dropdown_menu_head {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: all 0.1s ease;
+        .dropdown__link-circle {
+          width: 2.3125rem;
+        }
+        p {
+          font-size: 2rem;
+          color: #3e3e3e;
+          margin-left: 1.5rem;
+        }
+
+        .dropdown_menu_head-left {
+          display: flex;
+          .card_digit {
+            display: flex;
+            font-size: 2.25rem;
+            color: #3e3e3e;
+            > div {
+              margin-left: 3rem;
+            }
+          }
+        }
+        .dropdowmn_list-icon {
+          width: 2.07rem;
+          transition: all 0.2s ease-in;
+        }
+      }
+      .dropdown_menu_list {
+        height: 0;
+        color: #616885;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        top: 2.5rem;
+        left: 0;
+        transition: all 0.3s ease;
+        .dropdown__item {
+          padding: 3rem 0;
+          border-top: 2px solid #d9d9d9;
+          .dropdown__link {
+            display: flex;
+            align-items: center;
+            font-size: 2rem;
+            color: #3e3e3e;
+            > div {
+              margin-right: 1.5rem;
+            }
+            .dropdown__link-circle {
+              width: 2.3125rem;
+            }
+            .dropdown__link-logo {
+              width: 2.6875rem;
+              margin-right: 1.5rem;
+            }
+          }
+        }
+      }
+      &.show_dropdown {
+        // padding: 2rem;
+        // box-shadow: 0px 0px 20px 0px #4e5c7c4a;
+        // border-radius: 1.874rem;
+        .dropdown_menu_list {
+          height: auto;
+        }
+        .dropdowmn_list-icon {
+          transform: rotate(-180deg);
+        }
+      }
+    }
+    &.collapsible-border {
+      border-bottom: none;
+    }
+    &.collapsible_body--border {
+      border: none;
+    }
+  }
+  .collapsible_body_middle_block {
+    position: relative;
+    border-bottom: 0.125rem solid #282f54;
+    &.incorrect-amount {
+      border-bottom: 0.125rem solid #e20d00;
+      &::before {
+        content: attr(title);
+        display: block;
+        position: absolute;
+        left: 50%;
+        bottom: -3rem;
+        transform: translate(-50%, -50%);
+        color: #e20d00;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+      .collapsible_body-input {
+        color: #e20d00;
+      }
+    }
+  }
+
+  .collapsible_body_replenish_button {
+    width: 100%;
+    height: 8.8125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #ffffff;
+    background-color: #43a047;
+    border-radius: 1.25rem;
+    cursor: pointer;
+  }
+  .collapsible_body_text {
+    // margin-bottom: 0;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    color: #64687e;
+    text-align: justify;
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+}
+.collapsible_body_bottom_block {
+  display: flex;
+  justify-content: space-between;
+
+  .collapsible_body_bottom_block-left {
+    width: 55%;
+    border-bottom: 0.125rem solid #282f54;
+  }
+  .collapsible_body_bottom_block-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .confirm_button {
+      display: flex;
+      width: 17.125rem;
+      height: 6.4375rem;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      color: #ffffff;
+      background-color: #3e42b5;
+      border-radius: 0.6525rem;
+    }
+  }
+}
+
+.collapsible_body {
+  .join_card_block {
+    display: flex;
+    height: 24.6875rem;
+    padding: 2rem 2rem 3.125rem 2rem;
+    margin-bottom: 2.0625rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1.25rem;
+    background-color: #f5f5f5;
+    .join_card_block_title {
+      font-size: 2.125rem;
+      color: #4e5c67;
+      text-align: center;
+    }
+    .join_card_block_confirm_buttons {
+      display: flex;
+      > div {
+        width: 15.75rem;
+        height: 6.4375rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        color: #ffffff;
+        border-radius: 0.625rem;
+        background-color: #3eb553;
+        cursor: pointer;
+        &:first-child {
+          margin-right: 2.5rem;
+          background-color: #9ba7b4;
+        }
+      }
+    }
+  }
+}
+
+.collapsible_body {
+  &.no-padd {
+    padding: 0;
+    .collapsible_body_text {
+      padding: 0 3.2rem;
+    }
+  }
+  .collapsible_body_header {
+    display: flex;
+    height: 9.625rem;
+    justify-content: space-around;
+    background-color: #f5f5f5;
+    > div {
+      display: flex;
+      align-items: center;
+    }
+    .collapsible_body_header-left {
+      .atms_img {
+        width: 3.61rem;
+      }
+    }
+    .collapsible_body_header-right {
+      .video_img {
+        width: 3.95rem;
+      }
+    }
+    .link_info {
+      margin-left: 1.25rem;
+      font-size: 2.25rem;
+      color: #4053a1;
+      text-decoration: underline;
+    }
+  }
+}
