@@ -1,4 +1,4 @@
-.order_new_liderCard {
+.order_new_leaderCard {
   position: relative;
   display: flex;
   width: 100%;
@@ -15,7 +15,7 @@
     flex-direction: column;
     align-items: center;
     flex-grow: 1;
-    .lider_card_img {
+    .leader_card_img {
       position: relative;
       width: 39rem;
 
@@ -25,7 +25,7 @@
         // filter: drop-shadow(0 1.875rem 3.75rem rgba(37, 51, 87, 0.2));
       }
       &.done {
-        .lider_card_accepted_img_done {
+        .leader_card_accepted_img_done {
           position: absolute;
           width: 8.125rem;
           top: 50%;
@@ -47,7 +47,7 @@
         }
       }
     }
-    .order_new_liderCard_title {
+    .order_new_leaderCard_title {
       width: 39rem;
       margin: 6rem 0;
 
@@ -55,7 +55,7 @@
       text-align: center;
       font-size: 2.5rem;
     }
-    .order_new_liderCard_accepted_sms {
+    .order_new_leaderCard_accepted_sms {
       width: 45.6rem;
       margin-bottom: 3rem;
       padding: 0 2.375rem;
@@ -76,7 +76,7 @@
       background-color: #9ba7b4;
       border-radius: 0.625rem;
     }
-    .order_new_liderCard_button {
+    .order_new_leaderCard_button {
       display: flex;
       width: 21.125rem;
       height: 7rem;
@@ -91,13 +91,14 @@
         font-size: 2.25rem;
         letter-spacing: 2px;
       }
-      .order_new_liderCard_button-img {
+      .order_new_leaderCard_button-img {
         width: 3.05rem;
       }
     }
   }
-  .order_new_liderCard_link_info {
+  .order_new_leaderCard_link_info {
     width: 32.75rem;
+    margin-top: 6.25rem;
     text-align: center;
     color: #435fa0;
     font-size: 2.375rem;
@@ -107,7 +108,7 @@
 }
 
 .collapsible_body_bottom_block {
-  &.lider_card {
+  &.leader_card {
     width: 100%;
     padding: 0 6.25rem;
     .collapsible_body-input {
@@ -275,7 +276,7 @@
         width: 25.75rem;
       }
       .synchronization_title {
-        width: 72%;
+        width: 73%;
         margin: 6.8rem 0 1.5rem;
         text-align: center;
         font-size: 2.5rem;
