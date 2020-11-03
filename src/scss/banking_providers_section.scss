@@ -25,30 +25,16 @@
       .banking_provider_img {
         display: flex;
         align-items: center;
+        // width: 27rem;
         width: 58%;
         margin-right: 6rem;
+
         p {
           margin-left: 3.4375rem;
           color: #6e6f71;
           font-size: 1.5rem;
           font-weight: bold;
           font-family: "lbet-nus";
-        }
-        @media (max-width: 443px) {
-          width: 47%;
-        }
-        &.bg-width {
-          img {
-            @media (max-width: 493px) {
-              max-width: 127%;
-            }
-            @media (max-width: 406px) {
-              max-width: 137%;
-            }
-          }
-        }
-        &.info-img {
-          max-width: 34%;
         }
       }
       .banking_provider_info {
@@ -83,9 +69,37 @@
     &.active {
       .collapsible_body {
         height: auto;
+        padding-bottom: 3.87rem;
       }
       .banking_provider_icon {
         transform: rotate(90deg);
+      }
+    }
+  }
+  &.prov_sz {
+    .banking_provider_item .collapsible_head .banking_provider_img {
+      width: 45%;
+    }
+  }
+  &.mr {
+    .banking_provider_item .collapsible_head .banking_provider_img {
+      margin-right: 13rem;
+    }
+  }
+  &.img-sz {
+    .banking_provider_item {
+      &:last-child {
+        .banking_provider_img {
+          img {
+            width: 65%;
+          }
+        }
+      }
+      &:first-child {
+        .banking_provider_img {
+          margin: 0;
+          width: 70%;
+        }
       }
     }
   }
@@ -124,7 +138,11 @@
       font-size: 2.25rem;
       color: #3e3e3e;
     }
+    &:last-child {
+      margin-bottom: 0px;
+    }
   }
+
   .collapsible_body-label {
     // margin: 1rem 1rem 1rem 4.2rem;
     margin: 1rem;
