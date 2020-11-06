@@ -36,8 +36,11 @@
       color: white;
       padding: 2.8rem 0;
       font-size: 2rem;
+      font-family: "lbet-mt";
+
       cursor: pointer;
       background-color: #c3c9ce;
+
       &.active-green {
         background-color: #43a047;
       }

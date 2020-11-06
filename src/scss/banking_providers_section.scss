@@ -69,7 +69,7 @@
     &.active {
       .collapsible_body {
         height: auto;
-        padding-bottom: 3.87rem;
+        padding-bottom: 1.87rem;
       }
       .banking_provider_icon {
         transform: rotate(90deg);
@@ -124,7 +124,7 @@
   overflow: hidden;
   position: relative;
   transition: all 0.3s ease;
-  padding: 0 3.2rem;
+  padding: 0 1.87rem;
   z-index: 6;
 
   > div {
@@ -267,6 +267,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "lbet-mt";
     font-size: 3rem;
     color: #ffffff;
     background-color: #43a047;
@@ -290,6 +291,7 @@
 
   .collapsible_body_bottom_block-left {
     width: 55%;
+    font-family: "lbet-std";
     border-bottom: 0.125rem solid #282f54;
   }
   .collapsible_body_bottom_block-right {
@@ -303,6 +305,7 @@
       align-items: center;
       justify-content: center;
       font-size: 2rem;
+      font-family: "lbet-mt";
       color: #ffffff;
       background-color: #3e42b5;
       border-radius: 0.6525rem;
@@ -352,7 +355,7 @@
   &.no-padd {
     padding: 0;
     .collapsible_body_text {
-      padding: 0 3.2rem;
+      padding: 0 3.2rem 4rem;
     }
   }
   .collapsible_body_header {
