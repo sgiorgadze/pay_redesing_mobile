@@ -275,10 +275,10 @@
     cursor: pointer;
   }
   .collapsible_body_text {
-    // margin-bottom: 0;
     padding-bottom: 1rem;
     font-size: 2rem;
     color: #64687e;
+    line-height: 1.2;
     text-align: justify;
     p {
       margin-bottom: 1rem;
@@ -327,6 +327,7 @@
     .join_card_block_title {
       font-size: 2.125rem;
       color: #4e5c67;
+      line-height: 1.2;
       text-align: center;
     }
     .join_card_block_confirm_buttons {
